@@ -1,0 +1,6 @@
+framework module HS_Google_Material_Design_Icons {
+  umbrella header "HS-Google-Material-Design-Icons-umbrella.h"
+
+  export *
+  module * { export * }
+}

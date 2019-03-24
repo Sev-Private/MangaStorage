@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import MaterialComponents
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        (self.window?.rootViewController as? HomeNavigationController)?.delegate = self
+        
         return true
     }
 
@@ -44,3 +48,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate : MDCAppBarNavigationControllerDelegate{
+    
+    func appBarNavigationController(_ navigationController: MDCAppBarNavigationController, willAdd appBarViewController: MDCAppBarViewController, asChildOf viewController: UIViewController) {
+
+        MDCAppBarColorThemer.applyColorScheme(ColorScheme, to: appBarViewController)
+    }
+    
+    
+}

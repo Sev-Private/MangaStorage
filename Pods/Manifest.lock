@@ -1,0 +1,210 @@
+PODS:
+  - BoringSSL (10.0.2):
+    - BoringSSL/Implementation (= 10.0.2)
+    - BoringSSL/Interface (= 10.0.2)
+  - BoringSSL/Implementation (10.0.2):
+    - BoringSSL/Interface (= 10.0.2)
+  - BoringSSL/Interface (10.0.2)
+  - Firebase/Core (4.13.0):
+    - FirebaseAnalytics (= 4.2.0)
+    - FirebaseCore (= 4.0.20)
+  - Firebase/Firestore (4.13.0):
+    - Firebase/Core
+    - FirebaseFirestore (= 0.11.0)
+  - FirebaseAnalytics (4.2.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.20):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseFirestore (0.11.0):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - gRPC-ProtoRPC (~> 1.0)
+    - leveldb-library (~> 1.18)
+    - Protobuf (~> 3.5)
+  - FirebaseInstanceID (2.0.10):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - gRPC (1.11.0):
+    - gRPC-RxLibrary (= 1.11.0)
+    - gRPC/Main (= 1.11.0)
+  - gRPC-Core (1.11.0):
+    - gRPC-Core/Implementation (= 1.11.0)
+    - gRPC-Core/Interface (= 1.11.0)
+  - gRPC-Core/Implementation (1.11.0):
+    - BoringSSL (~> 10.0)
+    - gRPC-Core/Interface (= 1.11.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.11.0)
+  - gRPC-ProtoRPC (1.11.0):
+    - gRPC (= 1.11.0)
+    - gRPC-RxLibrary (= 1.11.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.11.0)
+  - gRPC/Main (1.11.0):
+    - gRPC-Core (= 1.11.0)
+    - gRPC-RxLibrary (= 1.11.0)
+  - HS-Google-Material-Design-Icons (1.2.1)
+  - leveldb-library (1.20)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - MaterialComponents/AnimationTiming (73.0.0)
+  - MaterialComponents/AppBar (73.0.0):
+    - MaterialComponents/FlexibleHeader
+    - MaterialComponents/HeaderStackView
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Icons/ic_arrow_back
+    - MaterialComponents/private/UIMetrics
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/AppBar+ColorThemer (73.0.0):
+    - MaterialComponents/AppBar
+    - MaterialComponents/FlexibleHeader+ColorThemer
+    - MaterialComponents/NavigationBar+ColorThemer
+    - MaterialComponents/Themes
+  - MaterialComponents/ButtonBar (73.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+  - MaterialComponents/Buttons (73.0.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Shapes
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Buttons+ButtonThemer (73.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/Buttons+ColorThemer
+    - MaterialComponents/Buttons+ShapeThemer
+    - MaterialComponents/Buttons+TypographyThemer
+  - MaterialComponents/Buttons+ColorThemer (73.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Color
+  - MaterialComponents/Buttons+ShapeThemer (73.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Shape
+  - MaterialComponents/Buttons+TypographyThemer (73.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/FlexibleHeader (73.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/UIMetrics
+    - MDFTextAccessibility
+  - MaterialComponents/FlexibleHeader+ColorThemer (73.0.0):
+    - MaterialComponents/FlexibleHeader
+    - MaterialComponents/schemes/Color
+  - MaterialComponents/HeaderStackView (73.0.0)
+  - MaterialComponents/Ink (73.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/NavigationBar (73.0.0):
+    - MaterialComponents/ButtonBar
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/NavigationBar+ColorThemer (73.0.0):
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/schemes/Color
+  - MaterialComponents/Palettes (73.0.0)
+  - MaterialComponents/private/Application (73.0.0)
+  - MaterialComponents/private/Icons/Base (73.0.0)
+  - MaterialComponents/private/Icons/ic_arrow_back (73.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Math (73.0.0)
+  - MaterialComponents/private/ShapeLibrary (73.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Shapes
+  - MaterialComponents/private/Shapes (73.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/private/UIMetrics (73.0.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/schemes/Color (73.0.0)
+  - MaterialComponents/schemes/Shape (73.0.0):
+    - MaterialComponents/private/ShapeLibrary
+    - MaterialComponents/private/Shapes
+  - MaterialComponents/schemes/Typography (73.0.0)
+  - MaterialComponents/ShadowElevations (73.0.0)
+  - MaterialComponents/ShadowLayer (73.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/TextFields (73.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/TextFields+ColorThemer (73.0.0):
+    - MaterialComponents/TextFields
+    - MaterialComponents/Themes
+  - MaterialComponents/Themes (73.0.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/Typography (73.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MaterialControls (1.2.2)
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.5.0)
+
+DEPENDENCIES:
+  - Firebase/Core
+  - Firebase/Firestore
+  - HS-Google-Material-Design-Icons
+  - Material
+  - MaterialComponents/AppBar
+  - MaterialComponents/AppBar+ColorThemer
+  - MaterialComponents/Buttons
+  - MaterialComponents/Buttons+ButtonThemer
+  - MaterialComponents/Buttons+ColorThemer
+  - MaterialComponents/schemes/Color
+  - MaterialComponents/TextFields
+  - MaterialComponents/TextFields+ColorThemer
+  - MaterialControls (~> 1.2.2)
+
+SPEC CHECKSUMS:
+  BoringSSL: 60dd24df4af296bf41d78e5841dbb95d75f88c0d
+  Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
+  FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
+  FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
+  FirebaseFirestore: e92a096ce80c7b4b905d4e9d41dbd944adc9d2a5
+  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  gRPC: 70703dc9ba31c72341fc7f37745cc1c379edee96
+  gRPC-Core: 164639cd8ae18ca8b65477fafb2efbaecf4f181a
+  gRPC-ProtoRPC: bb5fddf3424aa4fad74d76736578a79fe40e244e
+  gRPC-RxLibrary: 26d53d1b1f306befd4ad4e15bd6de27839a82481
+  HS-Google-Material-Design-Icons: 08d8541a88ecb1461635c51f644bef2e2863f9c8
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  MaterialComponents: 5ee94fadd206902ffa318ba5adfd3c9c8c799000
+  MaterialControls: 1c6b29e78d3a13d8dd6a67ed31b6d26eb5de8f72
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+
+PODFILE CHECKSUM: 1a129f44707cc7420b03305fbe1fd6b55bce37b0
+
+COCOAPODS: 1.4.0

@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF36DD6A2090F92900FBEAE4 /* Firestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36DD692090F92900FBEAE4 /* Firestore.swift */; };
+		AF36DD6C2090FA3500FBEAE4 /* Manga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36DD6B2090FA3500FBEAE4 /* Manga.swift */; };
+		AF36F7A8212A2DC200E068A2 /* MangaChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F7A7212A2DC200E068A2 /* MangaChapter.swift */; };
+		AF36F7AA212A2DD600E068A2 /* MangaStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F7A9212A2DD600E068A2 /* MangaStatus.swift */; };
+		AF36F7AC212A2DE600E068A2 /* MangaChapterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F7AB212A2DE600E068A2 /* MangaChapterStatus.swift */; };
+		AF7845F02243D1B40058DCC2 /* AddEditMangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845EF2243D1B40058DCC2 /* AddEditMangaViewController.swift */; };
+		AF7845FB2243DC840058DCC2 /* MangaStorage+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845FA2243DC840058DCC2 /* MangaStorage+UITableView.swift */; };
+		AF7845FD2243F3A60058DCC2 /* MangaStorage+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845FC2243F3A60058DCC2 /* MangaStorage+UIButton.swift */; };
+		AF7845FF22443E1B0058DCC2 /* MangaStorage+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845FE22443E1B0058DCC2 /* MangaStorage+UIViewController.swift */; };
+		AF78460122443EB00058DCC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78460022443EB00058DCC2 /* Constants.swift */; };
+		AF784605224517D00058DCC2 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF784604224517D00058DCC2 /* HomeNavigationController.swift */; };
 		AF873F192090C531006BEB47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF873F182090C531006BEB47 /* AppDelegate.swift */; };
-		AF873F1B2090C531006BEB47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF873F1A2090C531006BEB47 /* ViewController.swift */; };
+		AF873F1B2090C531006BEB47 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF873F1A2090C531006BEB47 /* HomeTableViewController.swift */; };
 		AF873F1E2090C531006BEB47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF873F1C2090C531006BEB47 /* Main.storyboard */; };
 		AF873F202090C532006BEB47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF873F1F2090C532006BEB47 /* Assets.xcassets */; };
 		AF873F232090C532006BEB47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF873F212090C532006BEB47 /* LaunchScreen.storyboard */; };
+		AF873F2B2090C5E3006BEB47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF873F2A2090C5E3006BEB47 /* GoogleService-Info.plist */; };
+		CC99905C3933BFE86614CB8F /* Pods_Manga_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC3D6A08685EDC085B2AF82 /* Pods_Manga_Storage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2485D6AE78027809319C902D /* Pods-Manga Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manga Storage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Manga Storage/Pods-Manga Storage.release.xcconfig"; sourceTree = "<group>"; };
+		2BC3D6A08685EDC085B2AF82 /* Pods_Manga_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Manga_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF36DD692090F92900FBEAE4 /* Firestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firestore.swift; sourceTree = "<group>"; };
+		AF36DD6B2090FA3500FBEAE4 /* Manga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manga.swift; sourceTree = "<group>"; };
+		AF36F7A7212A2DC200E068A2 /* MangaChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaChapter.swift; sourceTree = "<group>"; };
+		AF36F7A9212A2DD600E068A2 /* MangaStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaStatus.swift; sourceTree = "<group>"; };
+		AF36F7AB212A2DE600E068A2 /* MangaChapterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaChapterStatus.swift; sourceTree = "<group>"; };
+		AF7845EF2243D1B40058DCC2 /* AddEditMangaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditMangaViewController.swift; sourceTree = "<group>"; };
+		AF7845FA2243DC840058DCC2 /* MangaStorage+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MangaStorage+UITableView.swift"; sourceTree = "<group>"; };
+		AF7845FC2243F3A60058DCC2 /* MangaStorage+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MangaStorage+UIButton.swift"; sourceTree = "<group>"; };
+		AF7845FE22443E1B0058DCC2 /* MangaStorage+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MangaStorage+UIViewController.swift"; sourceTree = "<group>"; };
+		AF78460022443EB00058DCC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF784604224517D00058DCC2 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		AF873F152090C531006BEB47 /* Manga Storage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manga Storage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF873F182090C531006BEB47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF873F1A2090C531006BEB47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF873F1A2090C531006BEB47 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		AF873F1D2090C531006BEB47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF873F1F2090C532006BEB47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF873F222090C532006BEB47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF873F242090C532006BEB47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF873F2A2090C5E3006BEB47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D16806F81196CAF51BF6869B /* Pods-Manga Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manga Storage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Manga Storage/Pods-Manga Storage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99905C3933BFE86614CB8F /* Pods_Manga_Storage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3593E2A382F147766086E223 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D16806F81196CAF51BF6869B /* Pods-Manga Storage.debug.xcconfig */,
+				2485D6AE78027809319C902D /* Pods-Manga Storage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62E6097734BDC97E841B531D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC3D6A08685EDC085B2AF82 /* Pods_Manga_Storage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF36DD682090F91900FBEAE4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF36DD692090F92900FBEAE4 /* Firestore.swift */,
+				AF78460022443EB00058DCC2 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF36F7B0212A2FB400E068A2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AF43152D22389C3300CF9B78 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF873F1C2090C531006BEB47 /* Main.storyboard */,
+				AF873F212090C532006BEB47 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AF7845F42243D6880058DCC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF7845FA2243DC840058DCC2 /* MangaStorage+UITableView.swift */,
+				AF7845FC2243F3A60058DCC2 /* MangaStorage+UIButton.swift */,
+				AF7845FE22443E1B0058DCC2 /* MangaStorage+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF7845F72243D7CA0058DCC2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		AF873F0C2090C531006BEB47 = {
 			isa = PBXGroup;
 			children = (
 				AF873F172090C531006BEB47 /* Manga Storage */,
 				AF873F162090C531006BEB47 /* Products */,
+				3593E2A382F147766086E223 /* Pods */,
+				62E6097734BDC97E841B531D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +144,48 @@
 		AF873F172090C531006BEB47 /* Manga Storage */ = {
 			isa = PBXGroup;
 			children = (
+				AF7845F42243D6880058DCC2 /* Extensions */,
+				AF43152D22389C3300CF9B78 /* Storyboards */,
+				AF36DD682090F91900FBEAE4 /* Helpers */,
+				AF873F2E2090C72C006BEB47 /* Views */,
+				AF873F2D2090C726006BEB47 /* Controllers */,
+				AF873F2C2090C71C006BEB47 /* Models */,
 				AF873F182090C531006BEB47 /* AppDelegate.swift */,
-				AF873F1A2090C531006BEB47 /* ViewController.swift */,
-				AF873F1C2090C531006BEB47 /* Main.storyboard */,
 				AF873F1F2090C532006BEB47 /* Assets.xcassets */,
-				AF873F212090C532006BEB47 /* LaunchScreen.storyboard */,
 				AF873F242090C532006BEB47 /* Info.plist */,
+				AF873F2A2090C5E3006BEB47 /* GoogleService-Info.plist */,
 			);
 			path = "Manga Storage";
+			sourceTree = "<group>";
+		};
+		AF873F2C2090C71C006BEB47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF36DD6B2090FA3500FBEAE4 /* Manga.swift */,
+				AF36F7A7212A2DC200E068A2 /* MangaChapter.swift */,
+				AF36F7A9212A2DD600E068A2 /* MangaStatus.swift */,
+				AF36F7AB212A2DE600E068A2 /* MangaChapterStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF873F2D2090C726006BEB47 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF873F1A2090C531006BEB47 /* HomeTableViewController.swift */,
+				AF7845EF2243D1B40058DCC2 /* AddEditMangaViewController.swift */,
+				AF784604224517D00058DCC2 /* HomeNavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF873F2E2090C72C006BEB47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF7845F72243D7CA0058DCC2 /* CustomViews */,
+				AF36F7B0212A2FB400E068A2 /* TableViewCells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF873F272090C532006BEB47 /* Build configuration list for PBXNativeTarget "Manga Storage" */;
 			buildPhases = (
+				E5102D6C03A1F8B50B9FC542 /* [CP] Check Pods Manifest.lock */,
 				AF873F112090C531006BEB47 /* Sources */,
 				AF873F122090C531006BEB47 /* Frameworks */,
 				AF873F132090C531006BEB47 /* Resources */,
+				C2C3486BA6FCF60773FFBECD /* [CP] Embed Pods Frameworks */,
+				C1072CA8FE6E3084CE0F7984 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF873F232090C532006BEB47 /* LaunchScreen.storyboard in Resources */,
+				AF873F2B2090C5E3006BEB47 /* GoogleService-Info.plist in Resources */,
 				AF873F202090C532006BEB47 /* Assets.xcassets in Resources */,
 				AF873F1E2090C531006BEB47 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +258,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C1072CA8FE6E3084CE0F7984 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Manga Storage/Pods-Manga Storage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C3486BA6FCF60773FFBECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Manga Storage/Pods-Manga Storage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HS-Google-Material-Design-Icons/HS_Google_Material_Design_Icons.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialControls/MaterialControls.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HS_Google_Material_Design_Icons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialControls.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Manga Storage/Pods-Manga Storage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5102D6C03A1F8B50B9FC542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Manga Storage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF873F112090C531006BEB47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF873F1B2090C531006BEB47 /* ViewController.swift in Sources */,
+				AF7845FD2243F3A60058DCC2 /* MangaStorage+UIButton.swift in Sources */,
+				AF36F7AA212A2DD600E068A2 /* MangaStatus.swift in Sources */,
+				AF36F7AC212A2DE600E068A2 /* MangaChapterStatus.swift in Sources */,
+				AF7845FF22443E1B0058DCC2 /* MangaStorage+UIViewController.swift in Sources */,
+				AF784605224517D00058DCC2 /* HomeNavigationController.swift in Sources */,
+				AF873F1B2090C531006BEB47 /* HomeTableViewController.swift in Sources */,
+				AF7845FB2243DC840058DCC2 /* MangaStorage+UITableView.swift in Sources */,
 				AF873F192090C531006BEB47 /* AppDelegate.swift in Sources */,
+				AF36DD6C2090FA3500FBEAE4 /* Manga.swift in Sources */,
+				AF36DD6A2090F92900FBEAE4 /* Firestore.swift in Sources */,
+				AF36F7A8212A2DC200E068A2 /* MangaChapter.swift in Sources */,
+				AF7845F02243D1B40058DCC2 /* AddEditMangaViewController.swift in Sources */,
+				AF78460122443EB00058DCC2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,15 +501,13 @@
 		};
 		AF873F282090C532006BEB47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16806F81196CAF51BF6869B /* Pods-Manga Storage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4KU8H2GBA;
 				INFOPLIST_FILE = "Manga Storage/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sevontheedge.Manga-Storage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +517,13 @@
 		};
 		AF873F292090C532006BEB47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2485D6AE78027809319C902D /* Pods-Manga Storage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4KU8H2GBA;
 				INFOPLIST_FILE = "Manga Storage/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sevontheedge.Manga-Storage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
