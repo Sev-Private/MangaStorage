@@ -52,6 +52,14 @@ extension AppDelegate : MDCAppBarNavigationControllerDelegate{
     
     func appBarNavigationController(_ navigationController: MDCAppBarNavigationController, willAdd appBarViewController: MDCAppBarViewController, asChildOf viewController: UIViewController) {
 
+        // Enables support for iPad popovers and extensions.
+        // Automatically enables topLayoutGuideAdjustmentEnabled as well, but does not set a
+        // topLayoutGuideViewController.
+        appBarViewController.inferTopSafeAreaInsetFromViewController = true
+        
+        // Enables support for iPhone X safe area insets.
+        appBarViewController.headerView.minMaxHeightIncludesSafeArea = false
+        
         MDCAppBarColorThemer.applyColorScheme(ColorScheme, to: appBarViewController)
     }
     

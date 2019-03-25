@@ -14,6 +14,7 @@ target 'Manga Storage' do
     #Material Google
     pod 'HS-Google-Material-Design-Icons'
     pod 'MaterialControls', '~> 1.2.2'
+    pod 'Material'
     pod 'MaterialComponents/TextFields'
     pod 'MaterialComponents/TextFields+ColorThemer'
     pod 'MaterialComponents/AppBar'
@@ -21,8 +22,12 @@ target 'Manga Storage' do
     pod 'MaterialComponents/Buttons'
     pod 'MaterialComponents/Buttons+ButtonThemer'
     pod 'MaterialComponents/Buttons+ColorThemer'
+    pod 'MaterialComponents/ActivityIndicator'
+    pod 'MaterialComponents/ActivityIndicator+ColorThemer'
     pod 'MaterialComponents/schemes/Color'
-    pod 'Material'
+    
+    
+    pod 'SDWebImage'
     
     #testar depois
     #pod 'Motion'

@@ -58,11 +58,11 @@ extension UITableView{
     func show(loading: Bool){
         if loading{
             
-            let activityIndicator = MDProgress()
+            let activityIndicator = MDCActivityIndicator()
             activityIndicator.sizeToFit()
-            activityIndicator.progressType = .indeterminate
-            activityIndicator.progressStyle = .circular
-            activityIndicator.progressColor = Constants.Colors.PrimaryColor
+            activityIndicator.startAnimating()
+            
+            MDCActivityIndicatorColorThemer.applySemanticColorScheme(ColorScheme, to: activityIndicator)
         
             setTableViewBackground(withViews: [activityIndicator])
             

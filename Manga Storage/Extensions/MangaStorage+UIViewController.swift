@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MaterialComponents.MDCAppBarNavigationController
 
 extension UIViewController{
     
@@ -15,16 +14,12 @@ extension UIViewController{
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
-    var mainStoryboard : UIStoryboard{
-        return UIStoryboard(name: "Main", bundle: nil)
+    func instantiateViewController<T>(withType type: T.Type) -> T where T: UIViewController{
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: T.storyboardId) as! T
     }
     
     class var storyboardId : String{
         return String(describing: self)
     }
-//    
-//    var homeNavigationController : HomeNavigationController?{
-//        return (self.navigationController as? HomeNavigationController)
-//    }
-//    
+
 }

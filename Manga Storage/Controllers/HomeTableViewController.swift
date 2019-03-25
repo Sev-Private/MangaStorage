@@ -106,16 +106,13 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "meu nenem"
         
         //bar button item
         let add = UIBarButtonItem(title: "vai", style: .plain, target: self, action: #selector(addPressed))
 //        add.tintColor = .black
         self.navigationItem.rightBarButtonItem = add
         
-        self.tableView.show(error: true, withMessage: "teste") {
-            print("teste")
-        }
+        
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -167,7 +164,7 @@ class HomeTableViewController: UITableViewController {
 
     @objc
     func addPressed(){
-        let addEditViewController = mainStoryboard.instantiateViewController(withIdentifier: AddEditMangaViewController.storyboardId) as! AddEditMangaViewController
+        let addEditViewController = instantiateViewController(withType: AddEditMangaViewController.self)
         self.navigationController?.pushViewController(addEditViewController, animated: true)
 //        performSegue(withIdentifier: "addMangaSegue", sender: nil)
     }

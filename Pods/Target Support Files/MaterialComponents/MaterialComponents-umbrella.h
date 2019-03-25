@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "MaterialActivityIndicator.h"
+#import "MDCActivityIndicator.h"
+#import "MaterialActivityIndicator+ColorThemer.h"
+#import "MDCActivityIndicatorColorThemer.h"
 #import "CAMediaTimingFunction+MDCAnimationTiming.h"
 #import "MaterialAnimationTiming.h"
 #import "UIView+MDCTimingFunction.h"

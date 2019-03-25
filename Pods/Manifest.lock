@@ -54,6 +54,14 @@ PODS:
     - Material/Core (= 2.16.4)
   - Material/Core (2.16.4):
     - Motion (~> 1.4.3)
+  - MaterialComponents/ActivityIndicator (73.0.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/ActivityIndicator+ColorThemer (73.0.0):
+    - MaterialComponents/ActivityIndicator
+    - MaterialComponents/schemes/Color
   - MaterialComponents/AnimationTiming (73.0.0)
   - MaterialComponents/AppBar (73.0.0):
     - MaterialComponents/FlexibleHeader
@@ -160,18 +168,26 @@ PODS:
   - Motion (1.4.3):
     - Motion/Core (= 1.4.3)
   - Motion/Core (1.4.3)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.5.0)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - HS-Google-Material-Design-Icons
   - Material
+  - MaterialComponents/ActivityIndicator
+  - MaterialComponents/ActivityIndicator+ColorThemer
   - MaterialComponents/AppBar
   - MaterialComponents/AppBar+ColorThemer
   - MaterialComponents/Buttons
@@ -181,6 +197,7 @@ DEPENDENCIES:
   - MaterialComponents/TextFields
   - MaterialComponents/TextFields+ColorThemer
   - MaterialControls (~> 1.2.2)
+  - SDWebImage
 
 SPEC CHECKSUMS:
   BoringSSL: 60dd24df4af296bf41d78e5841dbb95d75f88c0d
@@ -202,9 +219,12 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: 1a129f44707cc7420b03305fbe1fd6b55bce37b0
+PODFILE CHECKSUM: 65424c03f5b24f23e45c4275b5db2f9c89c45b93
 
 COCOAPODS: 1.4.0

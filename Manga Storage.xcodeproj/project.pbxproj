@@ -12,6 +12,7 @@
 		AF36F7A8212A2DC200E068A2 /* MangaChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F7A7212A2DC200E068A2 /* MangaChapter.swift */; };
 		AF36F7AA212A2DD600E068A2 /* MangaStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F7A9212A2DD600E068A2 /* MangaStatus.swift */; };
 		AF36F7AC212A2DE600E068A2 /* MangaChapterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F7AB212A2DE600E068A2 /* MangaChapterStatus.swift */; };
+		AF4D748E2249266C00F02A5F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D748D2249266C00F02A5F /* Validator.swift */; };
 		AF7845F02243D1B40058DCC2 /* AddEditMangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845EF2243D1B40058DCC2 /* AddEditMangaViewController.swift */; };
 		AF7845FB2243DC840058DCC2 /* MangaStorage+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845FA2243DC840058DCC2 /* MangaStorage+UITableView.swift */; };
 		AF7845FD2243F3A60058DCC2 /* MangaStorage+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7845FC2243F3A60058DCC2 /* MangaStorage+UIButton.swift */; };
@@ -35,6 +36,7 @@
 		AF36F7A7212A2DC200E068A2 /* MangaChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaChapter.swift; sourceTree = "<group>"; };
 		AF36F7A9212A2DD600E068A2 /* MangaStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaStatus.swift; sourceTree = "<group>"; };
 		AF36F7AB212A2DE600E068A2 /* MangaChapterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaChapterStatus.swift; sourceTree = "<group>"; };
+		AF4D748D2249266C00F02A5F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		AF7845EF2243D1B40058DCC2 /* AddEditMangaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditMangaViewController.swift; sourceTree = "<group>"; };
 		AF7845FA2243DC840058DCC2 /* MangaStorage+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MangaStorage+UITableView.swift"; sourceTree = "<group>"; };
 		AF7845FC2243F3A60058DCC2 /* MangaStorage+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MangaStorage+UIButton.swift"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				AF36DD692090F92900FBEAE4 /* Firestore.swift */,
 				AF78460022443EB00058DCC2 /* Constants.swift */,
+				AF4D748D2249266C00F02A5F /* Validator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -290,7 +293,10 @@
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialControls/MaterialControls.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -309,7 +315,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialControls.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -351,6 +360,7 @@
 				AF36F7AA212A2DD600E068A2 /* MangaStatus.swift in Sources */,
 				AF36F7AC212A2DE600E068A2 /* MangaChapterStatus.swift in Sources */,
 				AF7845FF22443E1B0058DCC2 /* MangaStorage+UIViewController.swift in Sources */,
+				AF4D748E2249266C00F02A5F /* Validator.swift in Sources */,
 				AF784605224517D00058DCC2 /* HomeNavigationController.swift in Sources */,
 				AF873F1B2090C531006BEB47 /* HomeTableViewController.swift in Sources */,
 				AF7845FB2243DC840058DCC2 /* MangaStorage+UITableView.swift in Sources */,

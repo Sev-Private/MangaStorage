@@ -8,81 +8,79 @@
 
 import UIKit
 import Material
+import SDWebImage
 import MaterialComponents.MaterialTextFields
 import MaterialComponents.MaterialTextFields_ColorThemer
 
 
 class AddEditMangaViewController: UIViewController {
 
-    @IBOutlet weak var mainScrollViewBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var scrollContentView: UIStackView!
     
-    private var nameInput: MDCTextInputControllerOutlined?
+    @IBOutlet weak var saveButton: MDCButton!
+    
+    private var nameTextFieldController: MDCTextInputControllerOutlined?
+    private var urlTextFieldController: MDCTextInputControllerOutlined?
+    
+    
+    private var embeddedTableViewController : AddEditMangaEmbedTableViewController{
+        return self.childViewControllers.first(where: { (vc) -> Bool in
+            return vc is AddEditMangaEmbedTableViewController
+        }) as! AddEditMangaEmbedTableViewController
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         removeBackButtonTitle()
         
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        setupMainLayout()
         
-        notificationCenter.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
-        setupLayout()
+        setupTextFieldsLayout()
     }
     
-//    MDCTextField *textFieldName = [[MDCTextField alloc] init];
-//    textFieldName.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self.scrollView addSubview:textFieldName];
-//
-//    textFieldName.delegate = self;
-//    textFieldName.clearButtonMode = UITextFieldViewModeUnlessEditing;
-//    textFieldName.backgroundColor = [UIColor whiteColor];
-//
-//    UIImage *leadingImage = [UIImage
-//    imageNamed:@"ic_search"
-//    inBundle:[NSBundle
-//    bundleForClass:[TextFieldOutlinedObjectiveCExample class]]
-//    compatibleWithTraitCollection:nil];
-//    textFieldName.leadingView = [[UIImageView alloc] initWithImage:leadingImage];
-//    textFieldName.leadingViewMode = UITextFieldViewModeAlways;
-//
-//    UIImage *trailingImage = [UIImage
-//    imageNamed:@"ic_done"
-//    inBundle:[NSBundle
-//    bundleForClass:[TextFieldOutlinedObjectiveCExample class]]
-//    compatibleWithTraitCollection:nil];
-//    textFieldName.trailingView = [[UIImageView alloc] initWithImage:trailingImage];
-//    textFieldName.trailingViewMode = UITextFieldViewModeAlways;
-//
-//    self.nameController = [[MDCTextInputControllerOutlined alloc] initWithTextInput:textFieldName];
-//    self.nameController.placeholderText = @"Full Name";
-//    [self styleTextInputController:self.nameController];
-//
-//    MDCTextField *textFieldAddress = [[MDCTextField alloc] init];
-//    textFieldAddress.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self.scrollView addSubview:textFieldAddress];
+    func setupMainLayout(){
+//        tableView.delegate = self
+        embeddedTableViewController.tableView.separatorStyle = .none
+        embeddedTableViewController.tableView.allowsSelection = false
+     embeddedTableViewController.tableView.backgroundColor = .red
+        
+        saveButton.setTitle("Salvar", for: .normal)
+        saveButton.isEnabled = false
+//        saveButton.isHidden = true
+        let buttonScheme = MDCButtonScheme()
+        MDCContainedButtonThemer.applyScheme(buttonScheme, to: saveButton)
+        MDCContainedButtonColorThemer.applySemanticColorScheme(ColorScheme, to: saveButton)
+        
+        
+        embeddedTableViewController.previewImageView.isHidden = true
+    }
     
-    func setupLayout(){
-        var nameTextField = MDCTextField()
-        nameTextField.translatesAutoresizingMaskIntoConstraints = false
-        scrollContentView.addArrangedSubview(nameTextField)
+    
+    func setupTextFieldsLayout(){
         
-        nameTextField.clearButtonMode = .whileEditing
-        nameTextField.backgroundColor = .white
-        
-        
-        var nameIcon = UILabel()
-        nameIcon.text = "bla bla bla"
+        embeddedTableViewController.nameTextField.clearButtonMode = .always
+        embeddedTableViewController.nameTextField.delegate = self
 //        nameIcon.GMDIcon = .gmdError
-        nameTextField.leadingView = UIImageView(image: Icon.audio)
-        nameTextField.leadingViewMode = .always
+//        nameTextField.leadingView = UIImageView(image: Icon.cm.)
+//        nameTextField.leadingViewMode = .always
         
-        self.nameInput = MDCTextInputControllerOutlined(textInput: nameTextField)
-        nameInput?.placeholderText = "Nome"
-        styleInputController(nameInput)
+        self.nameTextFieldController = MDCTextInputControllerOutlined(textInput: embeddedTableViewController.nameTextField)
+        nameTextFieldController?.placeholderText = "Nome"
+        nameTextFieldController?.helperText = "Nome do manga a ser adicionado"
+        
+        styleInputController(nameTextFieldController)
+        
+        embeddedTableViewController.urlTextField.clearButtonMode = .always
+        embeddedTableViewController.urlTextField.delegate = self
+        //        nameIcon.GMDIcon = .gmdError
+        //        nameTextField.leadingView = UIImageView(image: Icon.cm.)
+        //        nameTextField.leadingViewMode = .always
+        
+        self.urlTextFieldController = MDCTextInputControllerOutlined(textInput: embeddedTableViewController.urlTextField)
+        urlTextFieldController?.placeholderText = "Url"
+        urlTextFieldController?.helperText = "Url de imagem de preview"
+        
+        styleInputController(urlTextFieldController)
         
     }
     
@@ -90,22 +88,31 @@ class AddEditMangaViewController: UIViewController {
         
         MDCTextFieldColorThemer.applySemanticColorScheme(ColorScheme, to: controller!)
     }
+}
+
+extension AddEditMangaViewController : UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == embeddedTableViewController.urlTextField{
+            if let value = textField.text, let url = URL(string: value) {
+                embeddedTableViewController.previewImageView.isHidden = false
+                
+                embeddedTableViewController.previewImageView.sd_setImage(with: url)
+            }else{
+                embeddedTableViewController.previewImageView.isHidden = true
+            }
+        }
+    }
+}
+
+class AddEditMangaEmbedTableViewController : UITableViewController{
+    @IBOutlet weak var nameTextField: MDCTextField!
+    @IBOutlet weak var urlTextField: MDCTextField!
+    @IBOutlet weak var previewImageView: UIImageView!
     
-    
-    
-    @objc
-    func keyboardWillShow(_ notification: Notification) {
-        let userInfo = (notification as NSNotification).userInfo!
-        let keyboardSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        mainScrollViewBottomConstraint.constant = keyboardSize.height
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        self.automaticallyAdjustsScrollViewInsets = false;
+        self.navigationController?.navigationBar.isTranslucent = true
     }
     
-    @objc
-    func keyboardWillHide(_ notification: Notification) {
-        mainScrollViewBottomConstraint.constant = 0
-    }
-
-    
-
-
 }
